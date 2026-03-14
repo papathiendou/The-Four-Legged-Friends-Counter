@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Four-Legged Friends Counter - Boutique Premium</title>
+    <meta name="description" content="Découvrez notre sélection exclusive d'accessoires, de soins et de gourmandises pour votre compagnon à quatre pattes.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Notification Banner -->
+    <div class="top-banner">
+        <span>Livraison offerte à partir de 50€ d'achat 🐾</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="logo">
+                <img src="boutique-image.jpg" alt="Logo The Four-Legged Friends Counter" class="logo-image">
+                <span class="logo-text">The Four-Legged Friends Counter</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Accueil</a></li>
+                <li><a href="#shop">Boutique</a></li>
+                <li><a href="#about">Notre Histoire</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <button class="icon-btn" aria-label="Recherche">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+                <button class="icon-btn" aria-label="Compte">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </button>
+                <button class="icon-btn cart-btn" aria-label="Panier">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in-up">L'Élégance Canine & Féline</h1>
+            <p class="fade-in-up delay-1">Découvrez notre sélection exclusive d'accessoires, soins et gourmandises pour votre compagnon.</p>
+            <div class="hero-actions fade-in-up delay-2">
+                <a href="#shop" class="btn btn-primary">Découvrir la collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container categories-container scroll-reveal">
+            <a href="#" class="category-card">
+                <div class="category-img" style="background-color: #DCD0C0;"></div>
+                <h3>Colliers & Laisses</h3>
+            </a>
+            <a href="#" class="category-card">
+                <div class="category-img" style="background-color: #E6DFD6;"></div>
+                <h3>Gourmandises Bio</h3>
+            </a>
+            <a href="#" class="category-card">
+                <div class="category-img" style="background-color: #C5BBAE;"></div>
+                <h3>Soins & Bien-être</h3>
+            </a>
+            <a href="#" class="category-card">
+                <div class="category-img" style="background-color: #D3CACA;"></div>
+                <h3>Jouets & Confort</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section id="shop" class="shop section-padding bg-light">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Nos Incontournables</h2>
+                <p>Les produits préférés de nos clients à quatre pattes.</p>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card scroll-reveal delay-1">
+                    <a href="product-ange-gardien.html" style="display: block; text-decoration: none; color: inherit;">
+                        <div class="product-image">
+                            <div class="badge-new">Best-seller</div>
+                            <img src="https://ae01.alicdn.com/kf/Acf8ec74ff1d0488eab3ec6f177c57ce6x.jpg" alt="La Trousse Ange Gardien" />
+                            <button class="quick-add" onclick="event.preventDefault(); window.location.href='product-ange-gardien.html'">Découvrir</button>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="category">Soins & Sécurité</p>
+                        <h3><a href="product-ange-gardien.html">La Trousse "Ange Gardien"</a></h3>
+                        <div class="price">35,00 €</div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card scroll-reveal delay-2">
+                    <a href="product-armure-route.html" style="display: block; text-decoration: none; color: inherit;">
+                        <div class="product-image">
+                            <img src="https://ae01.alicdn.com/kf/S309991a40dd04640a1084c86e1a73d37F.jpg" alt="L'Armure de Route" />
+                            <button class="quick-add" onclick="event.preventDefault(); window.location.href='product-armure-route.html'">Découvrir</button>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="category">Promenade & Sécurité</p>
+                        <h3><a href="product-armure-route.html">L'Armure de Route</a></h3>
+                        <div class="price">42,00 €</div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card scroll-reveal delay-3">
+                    <a href="product-first-class.html" style="display: block; text-decoration: none; color: inherit;">
+                        <div class="product-image">
+                            <img src="https://ae01.alicdn.com/kf/S0fc1a9489b9b43ae8da433bcb923e2eeB.jpg" alt="Le First Class Canin" />
+                            <button class="quick-add" onclick="event.preventDefault(); window.location.href='product-first-class.html'">Découvrir</button>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="category">Transport & Confort</p>
+                        <h3><a href="product-first-class.html">Le "First Class" Canin</a></h3>
+                        <div class="price">49,00 €</div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card scroll-reveal delay-4">
+                    <a href="product-couteau-suisse.html" style="display: block; text-decoration: none; color: inherit;">
+                        <div class="product-image">
+                            <img src="https://ae01.alicdn.com/kf/S9a13d225f34943d09e1323f3414703ceE.jpg" alt="Le Couteau Suisse de la Promenade" />
+                            <button class="quick-add" onclick="event.preventDefault(); window.location.href='product-couteau-suisse.html'">Découvrir</button>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="category">Promenade & Hydratation</p>
+                        <h3><a href="product-couteau-suisse.html">Le "Couteau Suisse" de la Promenade</a></h3>
+                        <div class="price">28,00 €</div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card scroll-reveal delay-1">
+                    <a href="product-sac-a-dos.html" style="display: block; text-decoration: none; color: inherit;">
+                        <div class="product-image">
+                            <img src="https://ae01.alicdn.com/kf/S049ee8495c1d48ef8c4969fe3171468e9.jpg" alt="Le Sac à Dos Panoramique" />
+                            <button class="quick-add" onclick="event.preventDefault(); window.location.href='product-sac-a-dos.html'">Découvrir</button>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <p class="category">Transport & Voyage</p>
+                        <h3><a href="product-sac-a-dos.html">Le Sac à Dos Panoramique</a></h3>
+                        <div class="price">45,00 €</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all text-center" style="margin-top: 50px;">
+                <a href="#" class="btn btn-outline">Voir toute la boutique</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-image scroll-reveal">
+                <!-- Placeholder for boutique picture -->
+                <div class="image-wrapper" style="background-color: #EDE8E2; width: 100%; height: 500px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                    🏠
+                </div>
+            </div>
+            <div class="about-content scroll-reveal delay-2">
+                <h2>Bienvenue dans notre boutique</h2>
+                <p>Né d'une véritable passion pour les animaux, <strong>The Four-Legged Friends Counter</strong> est bien plus qu'une simple boutique. C'est un lieu repensé pour allier le style de vie de votre compagnon à votre propre esthétique.</p>
+                <p>Nous sélectionnons avec soin des marques éthiques, des produits durables et des ingrédients sains pour assurer le meilleur bien-être de ceux qui partagent votre quotidien.</p>
+                <ul class="benefits">
+                    <li>🐕 Produits testés et approuvés</li>
+                    <li>🌿 Ingrédients 100% naturels</li>
+                    <li>🤝 Marques artisanales locales</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter bg-dark section-padding text-center">
+        <div class="container">
+            <div class="newsletter-content scroll-reveal">
+                <h2>Rejoignez le Club</h2>
+                <p>Inscrivez-vous pour recevoir des nouvelles fraîches, des conseils d'experts et des offres exclusives pour votre compagnon.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+                    <input type="email" placeholder="Votre adresse email..." required>
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="boutique-image.jpg" alt="Logo Boutique" class="logo-image">
+                        <span class="logo-text">The Four-Legged Friends Counter</span>
+                    </div>
+                    <p>Le repaire des amoureux des animaux exigeants. Des produits d'exception pour des compagnons exceptionnels.</p>
+                    <div class="socials">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Pinterest</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Boutique</h3>
+                    <ul>
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Chiens</a></li>
+                        <li><a href="#">Chats</a></li>
+                        <li><a href="#">Cartes Cadeaux</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Service Client</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livraison & Retours</a></li>
+                        <li><a href="#">Contactez-nous</a></li>
+                        <li><a href="#">Suivre ma commande</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Informations Légales</h3>
+                    <ul>
+                        <li><a href="#">Mentions Légales</a></li>
+                        <li><a href="#">CGV</a></li>
+                        <li><a href="#">Politique de Confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Four-Legged Friends Counter. Boutique Propulsée par Shopify.</p>
+                <div class="payments">
+                    <!-- Text placeholders for payment icons -->
+                    <span>Visa</span> • <span>Mastercard</span> • <span>Apple Pay</span> • <span>PayPal</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar (Overlay) -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Empty state -->
+            <div class="empty-cart">
+                <div class="cart-icon">🛒</div>
+                <p>Votre panier est vide pour le moment.</p>
+                <button class="btn btn-primary close-cart-btn">Continuer mes achats</button>
+            </div>
+        </div>
+        <div class="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <span>Sous-total</span>
+                <span class="total-price">0,00 €</span>
+            </div>
+            <p class="tax-note">Taxes incluses et frais de port calculés à l'étape de paiement.</p>
+            <button class="btn btn-primary btn-full checkout-btn">Procéder au paiement</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

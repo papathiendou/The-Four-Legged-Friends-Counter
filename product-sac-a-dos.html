@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Sac à Dos Panoramique - The Four-Legged Friends Counter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Notification Banner -->
+    <div class="top-banner">
+        <span>Livraison offerte à partir de 50€ d'achat 🐾</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="boutique-image.jpg" alt="Logo The Four-Legged Friends Counter" class="logo-image">
+                    <span class="logo-text">The Four-Legged Friends Counter</span>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#shop" class="active">Boutique</a></li>
+                <li><a href="index.html#about">Notre Histoire</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <button class="icon-btn cart-btn" aria-label="Panier">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container product-detail-container">
+            
+            <!-- Gallery -->
+            <div class="product-gallery fade-in-up">
+                <div class="main-image">
+                    <img id="mainImage" src="https://ae01.alicdn.com/kf/S049ee8495c1d48ef8c4969fe3171468e9.jpg" alt="Le Sac à Dos Panoramique">
+                </div>
+                <div class="thumbnails">
+                    <img src="https://ae01.alicdn.com/kf/S049ee8495c1d48ef8c4969fe3171468e9.jpg" alt="Thumbnail 1" class="active" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S10e0e03741c04eb292cacc883f85bf50F.jpg" alt="Thumbnail 2" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/Sd05618545b9441b4a01a9d2f22a546adm.jpg" alt="Thumbnail 3" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S22ba5360eb3c446fb02acf0a2be5848az.jpg" alt="Thumbnail 4" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/Sf9ec261f0ad249f38db6f2d63bb246f73.jpg" alt="Thumbnail 5" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S2701ed897d3c4b469b88fd9834d2bba5r.jpg" alt="Thumbnail 6" onclick="changeImage(this.src, this)">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-meta fade-in-up delay-1">
+                <div class="category">Transport & Voyage</div>
+                <h1>Le Sac à Dos Panoramique</h1>
+                <div class="price">45,00 €</div>
+                
+                <div class="product-description">
+                    <p><em>Offrez à votre chat une fenêtre sur le monde.</em></p>
+                    <p><strong>Accroche :</strong> Ne laissez plus votre chat seul à la maison ! Avec le Sac Astronaute, emmenez votre compagnon partout avec vous, en toute sécurité, et laissez-le admirer le paysage comme jamais auparavant.</p>
+                    <p><strong>Pourquoi vos clients vont l'adorer :</strong></p>
+                    <ul>
+                    	<li><strong>Vue Imprenable :</strong> Le hublot transparent permet à votre chat de satisfaire sa curiosité naturelle sans stress.</li>
+                    	<li><strong>Confort Maximal :</strong> Doté de 9 trous d'aération stratégiques et d'un tapis doux au fond, il assure une circulation d'air parfaite et un confort douillet.</li>
+                    	<li><strong>Liberté pour vous :</strong> Portez-le sur le dos et gardez vos mains libres pour votre téléphone, vos clés ou votre café. Idéal pour la ville, la rando ou le vélo !</li>
+                    	<li><strong>Sécurité :</strong> Comprend une attache intérieure pour le collier afin d'empêcher toute évasion intempestive à l'ouverture.</li>
+                    </ul>
+                    <br>
+                    <p><strong>Prêt pour l'Aventure Extérieure :</strong> Conçu pour une utilisation en extérieur, ce sac à dos est idéal pour les voyages au parc, à la plage ou partout où vos aventures vous mènent.</p>
+                    <p><strong>Design Respirant & Matériaux Translucides :</strong> Assure que votre animal reste au frais, confortable et réduit son anxiété en lui offrant de la visibilité.</p>
+                </div>
+
+                <div class="product-actions" style="margin-top: 30px;">
+                    <div id='product-component-1773482698816'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'vjqzbp-1b.myshopify.com',
+      storefrontAccessToken: '8935e8a1ffd6baa083a1937d02014971',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '7489513783399',
+        node: document.getElementById('product-component-1773482698816'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "background": "transparent",
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false,
+      "options": false,
+      "quantity": true,
+      "button": true
+    },
+    "styles": {
+      "product": {
+        "text-align": "left",
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "0"
+        }
+      },
+      "button": {
+        "font-family": "Inter, sans-serif",
+        "font-weight": "600",
+        "font-size": "16px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#111827",
+        ":hover": {
+          "color": "#111827",
+          "background-color": "#b5956f"
+        },
+        "background-color": "#C4A47C",
+        ":focus": {
+          "background-color": "#b5956f"
+        },
+        "border-radius": "8px",
+        "padding-left": "32px",
+        "padding-right": "32px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px"
+      }
+    },
+    "text": {
+      "button": "Ajouter au panier"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Inter, sans-serif",
+        "font-weight": "600",
+        "font-size": "16px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#111827",
+        ":hover": {
+          "color": "#111827",
+          "background-color": "#b5956f"
+        },
+        "background-color": "#C4A47C",
+        ":focus": {
+          "background-color": "#b5956f"
+        },
+        "border-radius": "8px"
+      }
+    },
+    "text": {
+      "total": "Sous-total",
+      "button": "Paiement sécurisé",
+      "empty": "Votre panier est vide.",
+      "notice": "Taxes et frais de port calculés à l'étape de paiement."
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Inter, sans-serif",
+        "font-weight": "600",
+        "background-color": "#C4A47C",
+        ":hover": {
+          "background-color": "#b5956f"
+        },
+        ":focus": {
+          "background-color": "#b5956f"
+        }
+      },
+      "count": {
+        "font-size": "16px",
+        "color": "#111827",
+        ":hover": {
+          "color": "#111827"
+        }
+      },
+      "iconPath": {
+        "fill": "#111827"
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Sidebar (Overlay) -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Empty state hidden when items are inside -->
+            <div class="empty-cart">
+                <div class="cart-icon">🛒</div>
+                <p>Votre panier est vide pour le moment.</p>
+                <button class="btn btn-primary close-cart-btn">Continuer mes achats</button>
+            </div>
+        </div>
+        <div class="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <span>Sous-total</span>
+                <span class="total-price">0,00 €</span>
+            </div>
+            <p class="tax-note">Taxes incluses et frais de port calculés à l'étape de paiement.</p>
+            <button class="btn btn-primary btn-full checkout-btn">Procéder au paiement</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="boutique-image.jpg" alt="Logo Boutique" class="logo-image">
+                        <span class="logo-text">The Four-Legged Friends Counter</span>
+                    </div>
+                    <p>Le repaire des amoureux des animaux exigeants. Des produits d'exception pour des compagnons exceptionnels.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Four-Legged Friends Counter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery logic
+        function changeImage(src, element) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnails img').forEach(img => img.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        // Quantity logic
+        function updateQty(change) {
+            const qtyInput = document.getElementById('qty');
+            let current = parseInt(qtyInput.value);
+            let newVal = current + change;
+            if (newVal < 1) newVal = 1;
+            qtyInput.value = newVal;
+        }
+
+        // Add to cart main button logic
+        document.getElementById('addToCartBtn').addEventListener('click', function(e) {
+            const qty = parseInt(document.getElementById('qty').value);
+            
+            // Re-use logic from script.js to add and open cart
+            const cartCountLabel = document.querySelector('.cart-count');
+            let currentCount = parseInt(cartCountLabel.textContent) || 0;
+            currentCount += qty;
+            cartCountLabel.textContent = currentCount;
+            
+            // Visual feedback
+            const originalText = this.textContent;
+            this.textContent = "✓ Ajouté (" + qty + ")";
+            this.style.backgroundColor = "var(--clr-dark)";
+            
+            setTimeout(() => {
+                this.textContent = originalText;
+                this.style.backgroundColor = "";
+            }, 2000);
+
+            document.querySelector('.cart-sidebar').classList.add('active');
+            document.querySelector('.cart-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    </script>
+</body>
+</html>

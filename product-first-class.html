@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le "First Class" Canin - The Four-Legged Friends Counter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Notification Banner -->
+    <div class="top-banner">
+        <span>Livraison offerte à partir de 50€ d'achat 🐾</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="boutique-image.jpg" alt="Logo The Four-Legged Friends Counter" class="logo-image">
+                    <span class="logo-text">The Four-Legged Friends Counter</span>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#shop" class="active">Boutique</a></li>
+                <li><a href="index.html#about">Notre Histoire</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <button class="icon-btn cart-btn" aria-label="Panier">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container product-detail-container">
+            
+            <!-- Gallery -->
+            <div class="product-gallery fade-in-up">
+                <div class="main-image">
+                    <img id="mainImage" src="https://ae01.alicdn.com/kf/S0fc1a9489b9b43ae8da433bcb923e2eeB.jpg" alt="Le First Class Canin">
+                </div>
+                <div class="thumbnails">
+                    <img src="https://ae01.alicdn.com/kf/S0fc1a9489b9b43ae8da433bcb923e2eeB.jpg" alt="Thumbnail 1" class="active" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/Sae2371b7f25a44f9a69ec5b7398fa6b3c.jpg" alt="Thumbnail 2" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/Sd4e168abb14d4571924aeb4ff5194fb1D.jpg" alt="Thumbnail 3" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S4d376e254b654bc68a271f3f7c4fb864N.jpg" alt="Thumbnail 4" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S7953c8df465644c3af4b2db0f4929137U.jpg" alt="Thumbnail 5" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S6daa04f169de42939a7198acc0ef9e9fh.jpg" alt="Thumbnail 6" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S9168407f1b10405abb9545d941fc8697u.jpg" alt="Thumbnail 7" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S789c4a8fb7c24211a809311fc2ac26eck.jpg" alt="Thumbnail 8" onclick="changeImage(this.src, this)">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-meta fade-in-up delay-1">
+                <div class="category">Transport & Confort</div>
+                <h1>Le "First Class" Canin</h1>
+                <div class="price">49,00 €</div>
+                
+                <div class="product-description">
+                    <p><em>Sécurité et vue dégagée pour des trajets sereins.</em></p>
+                    <p><strong>Accroche :</strong> Fini le chien qui tremble, bave ou saute partout en voiture. Offrez-lui sa propre place sécurisée et surélevée pour qu'il puisse enfin regarder la route et se détendre.</p>
+                    <p><strong>Pourquoi vos clients vont l'adorer :</strong></p>
+                    <ul>
+                    	<li><strong>Anti-Stress :</strong> En étant surélevé, votre chien voit ce qui se passe dehors, ce qui réduit considérablement le mal des transports et l'anxiété.</li>
+                    	<li><strong>Installation Express :</strong> Se fixe en moins de 30 secondes sur le siège avant ou arrière grâce à des sangles réglables robustes.</li>
+                    	<li><strong>Propreté Garantie :</strong> Protège vos sièges de voiture des poils, de la boue et des griffures. Entièrement déhoussable et lavable !</li>
+                    	<li><strong>Cocon de Douceur :</strong> L'intérieur en peluche ultra-douce est si confortable que votre chien s'endormira avant même d'arriver.</li>
+                    </ul>
+                    <br>
+                    <p><strong>Matériau :</strong> Imitation Lin de haute qualité. Stable et pliable pour un rangement facile.</p>
+                </div>
+
+                <div class="product-actions" style="margin-top: 30px;">
+                    <div id='product-component-1773482677735'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'vjqzbp-1b.myshopify.com',
+      storefrontAccessToken: '8935e8a1ffd6baa083a1937d02014971',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '7489513848935',
+        node: document.getElementById('product-component-1773482677735'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "background": "transparent",
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false,
+      "options": false,
+      "quantity": true,
+      "button": true
+    },
+    "styles": {
+      "product": {
+        "text-align": "left",
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "0"
+        }
+      },
+      "button": {
+        "font-family": "Inter, sans-serif",
+        "font-weight": "600",
+        "font-size": "16px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#111827",
+        ":hover": {
+          "color": "#111827",
+          "background-color": "#b5956f"
+        },
+        "background-color": "#C4A47C",
+        ":focus": {
+          "background-color": "#b5956f"
+        },
+        "border-radius": "8px",
+        "padding-left": "32px",
+        "padding-right": "32px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px"
+      }
+    },
+    "text": {
+      "button": "Ajouter au panier"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Inter, sans-serif",
+        "font-weight": "600",
+        "font-size": "16px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#111827",
+        ":hover": {
+          "color": "#111827",
+          "background-color": "#b5956f"
+        },
+        "background-color": "#C4A47C",
+        ":focus": {
+          "background-color": "#b5956f"
+        },
+        "border-radius": "8px"
+      }
+    },
+    "text": {
+      "total": "Sous-total",
+      "button": "Paiement sécurisé",
+      "empty": "Votre panier est vide.",
+      "notice": "Taxes et frais de port calculés à l'étape de paiement."
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Inter, sans-serif",
+        "font-weight": "600",
+        "background-color": "#C4A47C",
+        ":hover": {
+          "background-color": "#b5956f"
+        },
+        ":focus": {
+          "background-color": "#b5956f"
+        }
+      },
+      "count": {
+        "font-size": "16px",
+        "color": "#111827",
+        ":hover": {
+          "color": "#111827"
+        }
+      },
+      "iconPath": {
+        "fill": "#111827"
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Sidebar (Overlay) -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Empty state hidden when items are inside -->
+            <div class="empty-cart">
+                <div class="cart-icon">🛒</div>
+                <p>Votre panier est vide pour le moment.</p>
+                <button class="btn btn-primary close-cart-btn">Continuer mes achats</button>
+            </div>
+        </div>
+        <div class="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <span>Sous-total</span>
+                <span class="total-price">0,00 €</span>
+            </div>
+            <p class="tax-note">Taxes incluses et frais de port calculés à l'étape de paiement.</p>
+            <button class="btn btn-primary btn-full checkout-btn">Procéder au paiement</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="boutique-image.jpg" alt="Logo Boutique" class="logo-image">
+                        <span class="logo-text">The Four-Legged Friends Counter</span>
+                    </div>
+                    <p>Le repaire des amoureux des animaux exigeants. Des produits d'exception pour des compagnons exceptionnels.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Four-Legged Friends Counter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery logic
+        function changeImage(src, element) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnails img').forEach(img => img.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        // Quantity logic
+        function updateQty(change) {
+            const qtyInput = document.getElementById('qty');
+            let current = parseInt(qtyInput.value);
+            let newVal = current + change;
+            if (newVal < 1) newVal = 1;
+            qtyInput.value = newVal;
+        }
+
+        // Add to cart main button logic
+        document.getElementById('addToCartBtn').addEventListener('click', function(e) {
+            const qty = parseInt(document.getElementById('qty').value);
+            
+            // Re-use logic from script.js to add and open cart
+            const cartCountLabel = document.querySelector('.cart-count');
+            let currentCount = parseInt(cartCountLabel.textContent) || 0;
+            currentCount += qty;
+            cartCountLabel.textContent = currentCount;
+            
+            // Visual feedback
+            const originalText = this.textContent;
+            this.textContent = "✓ Ajouté (" + qty + ")";
+            this.style.backgroundColor = "var(--clr-dark)";
+            
+            setTimeout(() => {
+                this.textContent = originalText;
+                this.style.backgroundColor = "";
+            }, 2000);
+
+            document.querySelector('.cart-sidebar').classList.add('active');
+            document.querySelector('.cart-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    </script>
+</body>
+</html>

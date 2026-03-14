@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Armure de Route - The Four-Legged Friends Counter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Notification Banner -->
+    <div class="top-banner">
+        <span>Livraison offerte à partir de 50€ d'achat 🐾</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="boutique-image.jpg" alt="Logo The Four-Legged Friends Counter" class="logo-image">
+                    <span class="logo-text">The Four-Legged Friends Counter</span>
+                </a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#shop" class="active">Boutique</a></li>
+                <li><a href="index.html#about">Notre Histoire</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <button class="icon-btn cart-btn" aria-label="Panier">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container product-detail-container">
+            
+            <!-- Gallery -->
+            <div class="product-gallery fade-in-up">
+                <div class="main-image">
+                    <img id="mainImage" src="https://ae01.alicdn.com/kf/S309991a40dd04640a1084c86e1a73d37F.jpg" alt="L'Armure de Route">
+                </div>
+                <div class="thumbnails">
+                    <img src="https://ae01.alicdn.com/kf/S309991a40dd04640a1084c86e1a73d37F.jpg" alt="Thumbnail 1" class="active" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S3effc9ccce1f46db9c41ac5c238c34b9I.jpg" alt="Thumbnail 2" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S0b1acbee614a43fa979509daf599eca5t.jpg" alt="Thumbnail 3" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S1b70c20009804e3190e0a3bd38e72d4dv.jpg" alt="Thumbnail 4" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/S6af04bfdc7ab4777b3f93bb2d776779fj.jpg" alt="Thumbnail 5" onclick="changeImage(this.src, this)">
+                    <img src="https://ae01.alicdn.com/kf/Sfaf6cfe3dbf04329ac9f2f3aaf6c6caby.jpg" alt="Thumbnail 6" onclick="changeImage(this.src, this)">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-meta fade-in-up delay-1">
+                <div class="category">Promenade & Sécurité</div>
+                <h1>L'Armure de Route</h1>
+                <div class="price">42,00 €</div>
+                
+                <div class="product-description">
+                    <p><em>La seule ceinture de sécurité digne de votre chien.</em></p>
+                    <p><strong>Accroche :</strong> Vous mettez votre ceinture, pourquoi pas lui ? En cas de freinage brusque, un chien non attaché devient un projectile de plusieurs centaines de kilos. Protégez-le (et protégez-vous) avec ce harnais certifié.</p>
+                    <p><strong>Pourquoi vos clients vont l'adorer :</strong></p>
+                    <ul>
+                        <li><strong>Robustesse Extrême :</strong> Conçu avec du tissu Oxford haute densité et des boucles en métal renforcé. Il est fait pour résister.</li>
+                        <li><strong>Double Usage :</strong> Un harnais intelligent qui sert à la fois pour la promenade (avec laisse) et pour la voiture (se clipse directement).</li>
+                        <li><strong>Confort Rembourré :</strong> Large plastron rembourré au niveau du poitrail pour absorber les chocs sans blesser l'animal.</li>
+                        <li><strong>Légal & Responsable :</strong> Évite les amendes pour "animal en liberté" dans l'habitacle et assure la sécurité de toute la famille.</li>
+                    </ul>
+                </div>
+
+                <div class="product-actions" style="margin-top: 30px;">
+                    <div id='product-component-1773482617890'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'vjqzbp-1b.myshopify.com',
+      storefrontAccessToken: '8935e8a1ffd6baa083a1937d02014971',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '7489513914471',
+        node: document.getElementById('product-component-1773482617890'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "background": "transparent",
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false,
+      "options": false,
+      "quantity": true,
+      "button": true
+    },
+    "styles": {
+      "product": {
+        "text-align": "left",
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "0"
+        }
+      },
+      "button": {
+        "font-family": "Inter, sans-serif",
+        "font-weight": "600",
+        "font-size": "16px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#111827",
+        ":hover": {
+          "color": "#111827",
+          "background-color": "#b5956f"
+        },
+        "background-color": "#C4A47C",
+        ":focus": {
+          "background-color": "#b5956f"
+        },
+        "border-radius": "8px",
+        "padding-left": "32px",
+        "padding-right": "32px"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px"
+      }
+    },
+    "text": {
+      "button": "Ajouter au panier"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Inter, sans-serif",
+        "font-weight": "600",
+        "font-size": "16px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#111827",
+        ":hover": {
+          "color": "#111827",
+          "background-color": "#b5956f"
+        },
+        "background-color": "#C4A47C",
+        ":focus": {
+          "background-color": "#b5956f"
+        },
+        "border-radius": "8px"
+      }
+    },
+    "text": {
+      "total": "Sous-total",
+      "button": "Paiement sécurisé",
+      "empty": "Votre panier est vide.",
+      "notice": "Taxes et frais de port calculés à l'étape de paiement."
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Inter, sans-serif",
+        "font-weight": "600",
+        "background-color": "#C4A47C",
+        ":hover": {
+          "background-color": "#b5956f"
+        },
+        ":focus": {
+          "background-color": "#b5956f"
+        }
+      },
+      "count": {
+        "font-size": "16px",
+        "color": "#111827",
+        ":hover": {
+          "color": "#111827"
+        }
+      },
+      "iconPath": {
+        "fill": "#111827"
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Sidebar (Overlay) -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Empty state hidden when items are inside -->
+            <div class="empty-cart">
+                <div class="cart-icon">🛒</div>
+                <p>Votre panier est vide pour le moment.</p>
+                <button class="btn btn-primary close-cart-btn">Continuer mes achats</button>
+            </div>
+        </div>
+        <div class="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <span>Sous-total</span>
+                <span class="total-price">0,00 €</span>
+            </div>
+            <p class="tax-note">Taxes incluses et frais de port calculés à l'étape de paiement.</p>
+            <button class="btn btn-primary btn-full checkout-btn">Procéder au paiement</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="boutique-image.jpg" alt="Logo Boutique" class="logo-image">
+                        <span class="logo-text">The Four-Legged Friends Counter</span>
+                    </div>
+                    <p>Le repaire des amoureux des animaux exigeants. Des produits d'exception pour des compagnons exceptionnels.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Four-Legged Friends Counter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery logic
+        function changeImage(src, element) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnails img').forEach(img => img.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        // Quantity logic
+        function updateQty(change) {
+            const qtyInput = document.getElementById('qty');
+            let current = parseInt(qtyInput.value);
+            let newVal = current + change;
+            if (newVal < 1) newVal = 1;
+            qtyInput.value = newVal;
+        }
+
+        // Add to cart main button logic
+        document.getElementById('addToCartBtn').addEventListener('click', function(e) {
+            const qty = parseInt(document.getElementById('qty').value);
+            
+            // Re-use logic from script.js to add and open cart
+            const cartCountLabel = document.querySelector('.cart-count');
+            let currentCount = parseInt(cartCountLabel.textContent) || 0;
+            currentCount += qty;
+            cartCountLabel.textContent = currentCount;
+            
+            // Visual feedback
+            const originalText = this.textContent;
+            this.textContent = "✓ Ajouté (" + qty + ")";
+            this.style.backgroundColor = "var(--clr-dark)";
+            
+            setTimeout(() => {
+                this.textContent = originalText;
+                this.style.backgroundColor = "";
+            }, 2000);
+
+            document.querySelector('.cart-sidebar').classList.add('active');
+            document.querySelector('.cart-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    </script>
+</body>
+</html>
