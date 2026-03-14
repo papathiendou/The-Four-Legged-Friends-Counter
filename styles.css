@@ -950,3 +950,31 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
     }
 }
+
+/* Contact Section Styles */
+.contact-section {
+    background: var(--clr-bg);
+    border-top: 1px solid var(--clr-border);
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: var(--clr-primary) !important;
+    background: rgba(196, 164, 124, 0.05) !important;
+}
+
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form-wrapper {
+        padding: 25px !important;
+    }
+.socials a:hover {
+    color: var(--clr-primary) !important;
+    transform: translateY(-3px);
+}
